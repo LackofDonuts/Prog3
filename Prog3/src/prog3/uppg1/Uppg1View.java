@@ -136,11 +136,9 @@ public class Uppg1View {
         c.gridheight = 4;
         c.gridwidth = 4;
         c.insets = new Insets(5, 5, 5, 5);
-        graphArea.setPreferredSize(new Dimension(400, 450));
-        pane.add(graphArea);
         StockGraph gt = new StockGraph();
         gt.setPreferredSize(new Dimension(400, 450));
-        graphArea.add(gt);
+        pane.add(gt, c);
 
         //Visa allting
         frame.pack();
